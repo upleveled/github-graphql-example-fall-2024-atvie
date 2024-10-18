@@ -2,13 +2,17 @@
   "name": "github-graphql-example-fall-2024-atvie",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@apollo/experimental-nextjs-app-support": "^0.11.3",
+    "graphql": "^16.9.0",
     "next": "15.0.0-canary.196",
     "react": "19.0.0-rc-cd22717c-20241013",
     "react-dom": "19.0.0-rc-cd22717c-20241013",
@@ -18,6 +22,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^9.12.0",
+    "eslint-config-upleveled": "^8.8.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0",
+    "stylelint-config-upleveled": "^1.1.5",
     "typescript": "^5"
   },
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
